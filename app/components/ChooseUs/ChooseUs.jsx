@@ -60,8 +60,8 @@ const ChooseUs = () => {
       <div className={`${style.chooseUs__bg} py-[54px] md:py-0`}>
         <div className="container m-auto">
           <p className="text-sm font-extralight ml-[100px] mb-[24px] md:mr-[250px] lg:text-lg">
-            Don't miss your opportunity! Fill out the form right now and join
-            our team!
+            Don&apos;t miss your opportunity! Fill out the form right now and
+            join our team!
           </p>
           <Form />
         </div>

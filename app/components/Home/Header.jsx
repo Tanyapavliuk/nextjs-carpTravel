@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   const [modalShow, setModalShow] = useState(false);
@@ -10,7 +11,13 @@ const Header = () => {
       <div className="container mx-auto flex justify-between align-middle pb-9">
         <div>
           <span>
-            <img src="/logo.svg" alt="SVG" className="w-[3.6875rem]" />
+            <Image
+              src="/logo.svg"
+              alt="SVG"
+              className="w-[3.6875rem]"
+              width={59}
+              height={21}
+            />
           </span>
           <h2 className="leading-normal text-white text-sm font-normal tracking-[0.1619rem]">
             CarpTravel
