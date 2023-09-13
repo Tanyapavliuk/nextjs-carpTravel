@@ -1,0 +1,20 @@
+.checkbox {
+    appearance: none;
+    position: absolute;
+}
+
+.checIcon {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #fff;
+    background-color: rgba(22, 22, 22, 0.05);
+box-shadow: 0px 0px 0px 4px #000000, 0px 0px 0px 2px #4B4C4B, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.checkbox:checked+.checIcon {
+    background-color: #fff;
+    border: 1.25px solid transparent;
+box-shadow: 0px 0px 0px 4px #000000, 0px 0px 0px 2px #4B4C4B, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
