@@ -72,7 +72,7 @@ const Form = () => {
       </label>
       {errors.firstName && (
         <p className="absolute translate-x-full translate-y-[200%] text-[#FF5757]  text-xs font-extralight tracking-[0.15rem] mb-1 leading-6">
-          &#215; Incorrect name
+          Incorrect name
         </p>
       )}
       <label className="relative text-xs font-extralight tracking-[0.15rem] mb-1 leading-6 md:row-start-2">
@@ -87,7 +87,7 @@ const Form = () => {
         />
         {errors.email && (
           <p className="absolute translate-x-full  text-[#FF5757]  text-xs font-extralight tracking-[0.15rem] mb-1 leading-6">
-            &#215; Incorrect email
+            Incorrect email
           </p>
         )}
       </label>
@@ -103,7 +103,7 @@ const Form = () => {
         />
         {errors.email && (
           <p className="absolute  text-[#FF5757]  text-xs font-extralight tracking-[0.15rem] mb-1 leading-6">
-            &#215; Incorrect position
+            Incorrect position
           </p>
         )}
       </label>
@@ -116,7 +116,7 @@ const Form = () => {
         />
         {errors.email && (
           <p className="absolute  text-[#FF5757]  text-xs font-extralight tracking-[0.15rem] mb-1 leading-6">
-            &#215; Incorrect phone
+            Incorrect phone
           </p>
         )}
         {error && (
