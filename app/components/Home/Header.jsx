@@ -31,18 +31,22 @@ const Header = () => {
         </p>
         {modalShow && (
           <div className=" w-screen h-screen backdrop-blur-xl bg-[#010A05BF] fixed top-0 left-0 z-10 flex justify-center items-center ">
-            <ul className="flex flex-col gap-y-12 items-center text-lg tracking-[0.0875rem] font-normal">
+            <ul className="text-white flex flex-col gap-y-12 items-center text-lg tracking-[0.0875rem] font-normal">
               <li className="cursor-pointer">
-                <a>About</a>
+                <Link href="/#about">About</Link>
               </li>
-              <li>Services</li>
-              <li>Career</li>
-              {/* <li>Gallery</li>
-              <li>Contacts</li> */}
+              <li>
+                <Link href="/#services">Services</Link>
+              </li>
+              <li>
+                <Link href="/#career">Career</Link>
+              </li>
+              <li>Gallery</li>
+              <li>Contacts</li>
             </ul>
           </div>
         )}
-        <ul className="hidden md:flex gap-y-12 gap-x-6 items-center text-sm tracking-[ 0.1125rem] font-normal">
+        <ul className="text-white hidden md:flex gap-y-12 gap-x-6 items-center text-sm tracking-[ 0.1125rem] font-normal">
           <li className="cursor-pointer">
             <Link href="/#about">About</Link>
           </li>
@@ -52,8 +56,8 @@ const Header = () => {
           <li>
             <Link href="/#career">Career</Link>
           </li>
-          {/* <li>Gallery</li>
-          <li>Contacts</li> */}
+          <li>Gallery</li>
+          <li>Contacts</li>
         </ul>
       </div>
     </>

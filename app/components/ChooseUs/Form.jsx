@@ -59,7 +59,7 @@ const Form = () => {
       onSubmit={handleSubmit(onSubmit)}
       className="flex flex-col gap-y-[24px] w-[17.5rem] md:grid md:grid-cols-2 md:w-auto md:gap-y-[16px] md:gap-x-[20px] lg:grid-cols-[290px_290px] lg:gap-x-[24px]"
     >
-      <label className="relative text-xs font-extralight tracking-[0.15rem] mb-1 leading-6 md:row-start-1 ">
+      <label className="text-white relative text-xs font-extralight tracking-[0.15rem] mb-1 leading-6 md:row-start-1 ">
         Full name
         <input
           placeholder="John Smith"
@@ -75,7 +75,7 @@ const Form = () => {
           Incorrect name
         </p>
       )}
-      <label className="relative text-xs font-extralight tracking-[0.15rem] mb-1 leading-6 md:row-start-2">
+      <label className="text-white relative text-xs font-extralight tracking-[0.15rem] mb-1 leading-6 md:row-start-2">
         E-mail
         <input
           {...register("email", {
@@ -91,7 +91,7 @@ const Form = () => {
           </p>
         )}
       </label>
-      <label className="relative text-xs font-extralight tracking-[0.15rem] mb-1 leading-6 md:row-start-3">
+      <label className="text-white relative text-xs font-extralight tracking-[0.15rem] mb-1 leading-6 md:row-start-3">
         Position
         <input
           {...register("position", {
@@ -107,7 +107,7 @@ const Form = () => {
           </p>
         )}
       </label>
-      <label className="relative text-xs font-extralight tracking-[0.15rem] mb-1 leading-6 md:row-start-4">
+      <label className="text-white relative text-xs font-extralight tracking-[0.15rem] mb-1 leading-6 md:row-start-4">
         Phone
         <input
           {...register("phone", { required: true })}
@@ -115,7 +115,7 @@ const Form = () => {
           placeholder="+ 38 (097) 12 34 567"
         />
         {errors.email && (
-          <p className="absolute  text-[#FF5757]  text-xs font-extralight tracking-[0.15rem] mb-1 leading-6">
+          <p className=" absolute  text-[#FF5757]  text-xs font-extralight tracking-[0.15rem] mb-1 leading-6">
             Incorrect phone
           </p>
         )}
@@ -123,14 +123,14 @@ const Form = () => {
           <p className="absolute translate-x-full text-slate-800">{error}</p>
         )}
       </label>
-      <label className="relative text-xs font-extralight tracking-[0.15rem] mb-1 leading-6 md:col-start-2 md:row-start-1 md:row-end-5">
+      <label className="text-white relative text-xs font-extralight tracking-[0.15rem] mb-1 leading-6 md:col-start-2 md:row-start-1 md:row-end-5">
         Message
         <textarea
           {...register("message")}
-          className="block resize-none w-[17.5rem] h-48 bg-white/[0.05] outline-none md:w-[13.8125rem] md:h-56 lg:w-[18.125rem] lg:h-64"
+          className="p-3 block resize-none w-[17.5rem] h-48 bg-white/[0.05] outline-none md:w-[13.8125rem] md:h-56 lg:w-[18.125rem] lg:h-64"
         ></textarea>
       </label>
-      <label className="relative text-xs font-extralight mb-1 leading-[1.375rem] md:col-start-1 md:row-start-5">
+      <label className="text-white relative text-xs font-extralight mb-1 leading-[1.375rem] md:col-start-1 md:row-start-5">
         <Controller
           name="checkbox"
           control={control}
@@ -147,12 +147,12 @@ const Form = () => {
             />
           )}
         />
-        <span className={`${style.checIcon} mr-2`}></span>I confirm my consent
-        to the processing of personal data.
+        <span className={`${style.checIcon} mr-2 text-white`}></span>I confirm
+        my consent to the processing of personal data.
       </label>
       <button
         type="submit"
-        className="uppercase text-3xl font-medium text-right md:col-start-2 md:row-start-5 "
+        className="uppercase text-3xl font-medium text-right md:col-start-2 md:row-start-5 text-white"
       >
         Send
       </button>

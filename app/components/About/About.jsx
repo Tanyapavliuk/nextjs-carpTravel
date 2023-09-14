@@ -6,7 +6,7 @@ const About = () => {
       <div className=" container mx-auto lg:relative">
         <div className="md:relative lg:static">
           <div className="md:grid md:grid-cols-[408px_1fr] md:gap-x-[76px] ">
-            <h2 className=" uppercase md:w-[100%] md:text-[68px] md:tracking-[-0.16rem] text-[40px] font-thin tracking-[-0.1em] leading-[3.5rem] pb-2">
+            <h2 className="text-white uppercase md:w-[100%] md:text-[68px] md:tracking-[-0.16rem] text-[40px] font-thin tracking-[-0.1em] leading-[3.5rem] pb-2">
               who <span className="font-light">we are</span>
             </h2>
             <div>
@@ -27,10 +27,10 @@ const About = () => {
             </div>
           </div>
           <div className="ml-24 md:ml-0 flex flex-col pb-10 md:w-[13.8125rem] md:absolute md:bottom-0 md:left-0 md:p-0 md:justify-normal lg:left-[75%]">
-            <h3 className="uppercase text-sm font-normal md:justify-start">
-              From vacationers{" "}
+            <h3 className="text-white uppercase text-sm font-normal md:justify-start">
+              From vacationers
             </h3>
-            <h3 className="text-right uppercase text-sm font-normal">
+            <h3 className="text-white text-right uppercase text-sm font-normal">
               to active travelers
             </h3>
             <p className=" text-white text-sm font-extralight ">

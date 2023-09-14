@@ -21,7 +21,7 @@ const Main = () => {
         <h1 className="lg:text-8xl lg:tracking-[-0.245rem] lg:leading-[6rem] md:col-start-1 md:row-start-1 md:row-end-3 md:text-[67px] md:tracking-[-0.1675rem] uppercase w-[17.5rem] leading-[3.5rem] font-thin text-4xl extra-big text-white pb-6 tracking-[-0.1rem] text-[40px]">
           <b>uncover</b> carpathian&apos;s secrets
         </h1>
-        <p className="md:row-start-3 md:text-sm md:w-[16.375rem] text-[10px] leading-4 font-extralight text-white w-[9.8125rem] ">
+        <p className="md:row-start-3 md:text-sm md:w-[16.375rem] text-[10px] leading-4 font-extralight text-white w-[9.8125rem] lg:w-[38rem]">
           Hoverla / Yaremche / Zakarpattia / Vorokhta / Synevyr Lake / Bukovel
         </p>
         <p className="lg:w-[18.375rem] md:text-justify md:w-[14.375rem] md:col-start-2 text-justify text-white text-sm font-extralight w-[17.5rem] ">
@@ -31,7 +31,7 @@ const Main = () => {
         </p>
 
         <Link
-          href="/"
+          href="/#career"
           className="md:row-start-3 text-white py-[0.1563rem] text-center bg-white/10 relative leading-[3rem] z-0"
         >
           <Image
