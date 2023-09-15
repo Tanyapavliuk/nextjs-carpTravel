@@ -164,10 +164,12 @@ const Form = () => {
       </button>
       {showModal && (
         <MyModal onClose={() => setShowModal(false)}>
-          <h2 className=" font-normal mb-2 text-base lg:text-lg">
+          <h2 className=" font-normal mb-2 text-base lg:text-lg text-black">
             <b>Thank you</b> for your application {submittedData.firstName}
           </h2>
-          <p>Wait for a reply to your mail:{submittedData.email}</p>
+          <p className="text-black text-base font-extralight">
+            Wait for a reply to your mail:{submittedData.email}
+          </p>
         </MyModal>
       )}
     </form>
