@@ -4,7 +4,7 @@ import Link from "next/link";
 const Main = () => {
   return (
     <div className="container mx-auto">
-      <div className="flex flex-col gap-y-6 md:grid md:grid-cols-[426px_230px] md:gap-x-12 lg:grid-cols-[646px_294px] lg:gap-x-[130px] xl:gap-x-[292px]">
+      <div className="flex flex-col gap-y-6 md:grid md:grid-cols-[426px_230px] md:gap-x-12 lg:grid-cols-[646px_294px]  md:justify-between">
         <div className="md:col-start-2 md:pb-7">
           <div className="flex justify-end">
             <b className="text-white lg:text-[98px] text-[37px] leading-normal font-medium md:text-[67px]">
@@ -32,7 +32,7 @@ const Main = () => {
 
         <Link
           href="/#career"
-          className="md:row-start-3 text-white py-[0.1563rem] text-center bg-white/10 relative leading-[3rem] z-0"
+          className="cursor-pointer md:row-start-3 text-white py-[0.1563rem] text-center bg-white/10 relative leading-[3rem] z-0 hover:bg-white/20"
         >
           <Image
             src="/images/btnRigth.svg"

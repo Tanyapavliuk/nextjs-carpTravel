@@ -4,6 +4,7 @@ import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
+import MyModal from "../../@modal/page";
 import style from "./Form.module.css";
 
 const phoneRegExp = /^(?:\+38|38|8)?[0-9]{10}$/; // Регулярний вираз для українського номеру телефону
@@ -21,13 +22,15 @@ const schema = yup
 
 const Form = () => {
   const [error, setError] = useState("");
+  const [showModal, setShowModal] = useState(false);
+  const [submittedData, setSubmittedData] = useState(null);
   const {
     control,
     getValues,
     setValue,
     register,
     handleSubmit,
-    watch,
+    reset,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
@@ -42,15 +45,16 @@ const Form = () => {
   });
 
   const onSubmit = (data) => {
-    console.log(watch(data));
-
     phoneSchema
       .validate(data.phone)
       .then(() => {
-        console.log("Номер телефону валідний.");
+        setShowModal(true);
+        setSubmittedData(data);
+        setError("");
+        reset();
       })
       .catch(() => {
-        setError("Wrong number");
+        setError("Incorrect phone");
       });
   };
 
@@ -72,7 +76,7 @@ const Form = () => {
       </label>
       {errors.firstName && (
         <p className="absolute translate-x-full translate-y-[200%] text-[#FF5757]  text-xs font-extralight tracking-[0.15rem] mb-1 leading-6">
-          Incorrect name
+          &#215;Incorrect name
         </p>
       )}
       <label className="text-white relative text-xs font-extralight tracking-[0.15rem] mb-1 leading-6 md:row-start-2">
@@ -87,7 +91,7 @@ const Form = () => {
         />
         {errors.email && (
           <p className="absolute translate-x-full  text-[#FF5757]  text-xs font-extralight tracking-[0.15rem] mb-1 leading-6">
-            Incorrect email
+            &#215;Incorrect email
           </p>
         )}
       </label>
@@ -103,7 +107,7 @@ const Form = () => {
         />
         {errors.email && (
           <p className="absolute  text-[#FF5757]  text-xs font-extralight tracking-[0.15rem] mb-1 leading-6">
-            Incorrect position
+            &#215;Incorrect position
           </p>
         )}
       </label>
@@ -114,13 +118,15 @@ const Form = () => {
           className="block text-[13px] text-white w-full h-6 bg-white/[0.05] outline-none pl-2"
           placeholder="+ 38 (097) 12 34 567"
         />
-        {errors.email && (
+        {errors.phone && (
           <p className=" absolute  text-[#FF5757]  text-xs font-extralight tracking-[0.15rem] mb-1 leading-6">
-            Incorrect phone
+            &#215;Incorrect phone
           </p>
         )}
         {error && (
-          <p className="absolute translate-x-full text-slate-800">{error}</p>
+          <p className="absolute translate-x-full text-xs font-extralight text-[#FF5757]">
+            &#215;{error}
+          </p>
         )}
       </label>
       <label className="text-white relative text-xs font-extralight tracking-[0.15rem] mb-1 leading-6 md:col-start-2 md:row-start-1 md:row-end-5">
@@ -156,6 +162,14 @@ const Form = () => {
       >
         Send
       </button>
+      {showModal && (
+        <MyModal onClose={() => setShowModal(false)}>
+          <h2 className=" font-normal mb-2 text-base lg:text-lg">
+            <b>Thank you</b> for your application {submittedData.firstName}
+          </h2>
+          <p>Wait for a reply to your mail:{submittedData.email}</p>
+        </MyModal>
+      )}
     </form>
   );
 };
