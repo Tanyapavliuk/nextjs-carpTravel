@@ -46,8 +46,12 @@ const Header = () => {
               <li className="cursor-pointer">
                 <Link href="/#career">Career</Link>
               </li>
-              <li>Gallery</li>
-              <li>Contacts</li>
+              <li className="cursor-pointer">
+                <Link href="/#gallery">Gallery</Link>
+              </li>
+              <li className="cursor-pointer">
+                <Link href="/#contact">Contacts</Link>
+              </li>
             </ul>
           </div>
         )}
@@ -68,12 +72,12 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link href="/" className={`${style.line} cursor-pointer`}>
+            <Link href="/#gallery" className={`${style.line} cursor-pointer`}>
               Gallery
             </Link>
           </li>
           <li>
-            <Link href="/" className={`${style.line} cursor-pointer`}>
+            <Link href="/#contact" className={`${style.line} cursor-pointer`}>
               Contacts
             </Link>
           </li>

@@ -1,4 +1,5 @@
 import style from "./About.module.css";
+import Title from "@/ui/Title";
 
 const About = () => {
   return (
@@ -6,9 +7,9 @@ const About = () => {
       <div className=" container mx-auto lg:relative">
         <div className="md:relative lg:static">
           <div className="md:grid md:grid-cols-[408px_1fr] md:gap-x-[76px] ">
-            <h2 className="text-white uppercase md:w-[100%] md:text-[68px] md:tracking-[-0.16rem] text-[40px] font-thin tracking-[-0.1em] leading-[3.5rem] pb-2">
+            <Title>
               who <span className="font-light">we are</span>
-            </h2>
+            </Title>
             <div>
               <p className="md:w-[13.8125rem] text-white text-sm font-extralight w-[11.25rem] pb-5">
                 <b>a team</b> of enthusiasts who are fully committed to the

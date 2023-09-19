@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import style from "./Offer.module.css";
 
-import AccentText from "../AccentText";
+import AccentText from "./AccentText";
 
 const Offer = () => {
   const [currentItem, setCurrentItem] = useState(0);
@@ -65,7 +65,7 @@ const Offer = () => {
                   <li
                     key={index}
                     id={index}
-                    className="cursor-pointer font-extralight opacity-50"
+                    className="cursor-pointer font-extralight opacity-50 hover:opacity-80"
                   >
                     {el}
                   </li>

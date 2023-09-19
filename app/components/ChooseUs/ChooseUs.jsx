@@ -1,15 +1,16 @@
 import Form from "./Form";
 import style from "./ChooseUs.module.css";
+import Title from "@/ui/Title";
 
 const ChooseUs = () => {
   return (
     <section className={`${style.choose__bg}`} id="career">
       <div className={`${style.chooseUs__bg}`}>
         <div className="container mx-auto py-14 md:py-0 ">
-          <div className="md:grid md:grid-cols-[368px_221px] md:gap-x-28 lg:justify-between">
-            <h2 className="text-white text-[40px] md:text-[65px]  w-full font-thin uppercase leading-[3.5rem] tracking-[-0.1rem] mb-6">
+          <div className="md:grid md:grid-cols-[368px_221px] md:gap-x-28 lg:justify-between lg:grid-cols-[539px_293px]">
+            <Title>
               Choose <span className="font-medium">US</span>
-            </h2>
+            </Title>
             <p className=" text-white text-sm font-extralight ml-[100px] mb-9 md:m-0 md:w-[13.8125rem] md:text-justify lg:text-lg lg:w-[18.25rem]">
               Your chance to join our passionate team in Carpathian tourism.
               Seeking talented professionals to share our common mission.
@@ -18,9 +19,9 @@ const ChooseUs = () => {
           <h3 className="text-white text-3xl font-extralight uppercase ml-[100px] mb-9 md:ml-[80px] md:mb-14">
             Why us ?
           </h3>
-          <ul className="flex flex-col gap-y-4 mr-[100px] text-right md:w-[14.0625rem] md:float-left md:mr-[28px] md:gap-y-6 lg:w-3/6 ">
+          <ul className="flex flex-col gap-y-4 mr-[90px] text-right md:w-[14.0625rem] md:float-left md:mr-[28px] md:gap-y-6 lg:w-3/6 ">
             <li className="lg:grid lg:grid-cols-2 lg:gap-y-6 lg:gap-x-6">
-              <h4 className="text-white text-xs font-normal mb-2 md:text-base lg:text-lg">
+              <h4 className="text-white text-sm font-normal mb-2 md:text-base lg:text-lg">
                 Professional development
               </h4>
               <p className="text-white text-xs font-extralight lg:text-left">
@@ -29,7 +30,7 @@ const ChooseUs = () => {
               </p>
             </li>
             <li className="lg:grid lg:grid-cols-2 lg:gap-y-6 lg:gap-x-6">
-              <h4 className="text-white text-xs font-normal mb-2 md:text-base lg:text-lg">
+              <h4 className="text-white text-sm font-normal mb-2 md:text-base lg:text-lg">
                 Teamwork
               </h4>
               <p className="text-white text-xs font-extralight lg:text-left">
@@ -38,7 +39,7 @@ const ChooseUs = () => {
               </p>
             </li>
             <li className=" lg:grid lg:grid-cols-2 lg:gap-y-6 lg:gap-x-6">
-              <h4 className="text-white text-xs font-normal mb-2 md:text-base lg:text-lg">
+              <h4 className="text-white text-sm font-normal mb-2 md:text-base lg:text-lg">
                 Stimulating work environment
               </h4>
               <p className="text-white text-xs font-extralight lg:text-left">
@@ -46,7 +47,7 @@ const ChooseUs = () => {
               </p>
             </li>
             <li className="lg:grid lg:grid-cols-2 lg:gap-y-6 lg:gap-x-6">
-              <h4 className="text-white text-xs font-normal mb-2 md:text-base lg:text-lg">
+              <h4 className="text-white text-sm font-normal mb-2 md:text-base lg:text-lg">
                 Exciting challenges
               </h4>
               <p className="text-white text-xs font-extralight lg:text-left">
