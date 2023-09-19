@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="lg:grid lg:grid-cols-[1fr_1fr]">
           <div className="grid grid-cols-[1fr_81px] gap-x-5 gap-y-6 mt-9 md:grid-cols-[187px_81px_50px_52px_71px] md:ml-9 md:mb-16 lg:grid-cols-[1fr_1fr] lg:gap-y-[64px] lg:mt-[70px]">
             <ul className="lg:text-right">
-              <li>
+              <li key="1">
                 <a
                   className="text-white text-xs font-normal  md:text-base lg:text-lg"
                   href="tel:+38(098)1234567"
@@ -19,7 +19,7 @@ const Contact = () => {
                   +38 (098) 12 34 567
                 </a>
               </li>
-              <li>
+              <li key="2">
                 <a
                   className="text-white text-sm font-normal  md:text-base lg:text-lg"
                   href="tel:+38(073)1234567"
@@ -44,8 +44,11 @@ const Contact = () => {
               Follow us
             </p>
             <div className="lg:pt-[60px] ">
-              {["facebook", "instagram", "youtube", "tiktok"].map((el) => (
-                <p className="text-white text-sm font-normal  md:text-base lg:text-lg">
+              {["facebook", "instagram", "youtube", "tiktok"].map((el, i) => (
+                <p
+                  key={i}
+                  className="text-white text-sm font-normal  md:text-base lg:text-lg"
+                >
                   {el}
                 </p>
               ))}
