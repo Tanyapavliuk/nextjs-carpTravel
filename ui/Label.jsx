@@ -9,7 +9,6 @@ const Label = ({ style, children }) => {
     "leading-6",
     style,
   ].join(" ");
-  console.log(styles);
   return <h2 className={styles}>{children}</h2>;
 };
 

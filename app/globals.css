@@ -28,11 +28,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
-.line:hover::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #fff;
+body #isModalShow{
+  overflow: hidden;
 }

@@ -31,7 +31,7 @@ const Main = () => {
         </p>
 
         <Link
-          href="/#career"
+          href="/#contact"
           className="cursor-pointer md:row-start-3 text-white py-[0.1563rem] text-center bg-white/10 relative leading-[3rem] z-0 hover:bg-white/20"
         >
           <Image
