@@ -1,6 +1,7 @@
-import Title from "@/ui/Title";
-import style from "./Gallery.module.css";
 import Gallery from "../Gallery/Gallery";
+import Title from "../../ui/Title";
+
+import style from "./Gallery.module.css";
 
 const GallerySection = () => {
   return (

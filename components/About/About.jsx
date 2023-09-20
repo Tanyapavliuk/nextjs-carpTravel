@@ -1,12 +1,13 @@
+import Title from "../../ui/Title";
+
 import style from "./About.module.css";
-import Title from "@/ui/Title";
 
 const About = () => {
   return (
     <section id="about" className={`px-[20px] py-[54px] ${style.about__bg}`}>
       <div className=" container mx-auto lg:relative">
         <div className="md:relative lg:static">
-          <div className="md:grid md:grid-cols-[408px_1fr] md:gap-x-[76px] ">
+          <div className="md:grid md:grid-cols-[408px_1fr] md:gap-x-[76px] lg:grid-cols-[606px_1fr] lg:gap-x-6">
             <Title>
               who <span className="font-light">we are</span>
             </Title>
@@ -39,7 +40,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <p className="text-white text-sm font-extralight md:w-[28.9375rem] md:ml-[241px] md:mt-14 lg:m-0 lg:mt-[72px] ">
+        <p className="text-white text-sm font-extralight md:w-[28.9375rem] md:ml-[241px] md:mt-14 lg:m-0 lg:mt-[72px] lg:w-[606px]">
           <b>We use methods</b> that are time-tested and proven. Our expert
           guides with in-depth knowledge of the Carpathian landscapes lead you
           safely through the mysteries of these mountains.

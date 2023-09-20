@@ -1,9 +1,10 @@
 "use client";
-import Image from "next/image";
 import { useState } from "react";
-import style from "./Offer.module.css";
+import Image from "next/image";
 
 import AccentText from "./AccentText";
+import style from "./Offer.module.css";
+import Title from "../../ui/Title";
 
 const Offer = () => {
   const [currentItem, setCurrentItem] = useState(0);
@@ -22,7 +23,7 @@ const Offer = () => {
     "/images/Rafting.jpg",
   ];
 
-  const handelClickItem = (e) => {
+  const handleClickItem = (e) => {
     if (!e.target.id) return;
     setCurrentItem(e.target.id);
   };
@@ -30,9 +31,9 @@ const Offer = () => {
     <section className={style.offer__bg} id="services">
       <div className="container mx-auto py-[54px] lg:py-[104px]">
         <div className="md:flex md:gap-x-[170px] md:items-center lg:mb-[20px]">
-          <h2 className="text-white md:text-[67px] md:tracking-[-0.1675rem] md:mt-0 mt-6 uppercase text-[40px] font-thin leading-[3.5rem] tracking-[-0.1rem] lg:text-8xl lg:tracking-[-0.245rem]">
+          <Title>
             we <b>offer</b>
-          </h2>
+          </Title>
           <p className="text-white font-thin text-[43px] text-end md:text-[67px] md:leading-[4.875rem] lg:text-8xl lg:tracking-[-0.245rem]">
             0{+currentItem + 1}/<span className="text-[#FFFFFF33]">05</span>
           </p>
@@ -40,7 +41,7 @@ const Offer = () => {
         <div className="md:grid md:grid-cols-[463px_1fr] md:gap-x-[20px] lg:grid-cols-2">
           <Image
             src={currentPhoto[currentItem]}
-            alt="ATVs_Traveling"
+            alt="We offer different activities like ATVS TRAVELING, ATVS TRAVELING, HOT AIR BALLOONING, SKYDIVING, SKYDIVING"
             width={300}
             height={300}
             className="md:w-full"
@@ -51,7 +52,7 @@ const Offer = () => {
             </p>
             <ul
               className="text-white uppercase mt-6 mb-8 flex flex-col gap-y-4 font-extralight md:mb-[25px] lg:m-0 lg:text-[28px] lg:gap-y-6"
-              onClick={handelClickItem}
+              onClick={handleClickItem}
             >
               {arrey.map((el, index) => {
                 if (+currentItem === index) {

@@ -1,6 +1,7 @@
 import Form from "./Form";
+import Title from "../../ui/Title";
+
 import style from "./ChooseUs.module.css";
-import Title from "@/ui/Title";
 
 const ChooseUs = () => {
   return (

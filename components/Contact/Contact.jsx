@@ -1,6 +1,8 @@
-import Title from "../../../ui/Title";
+import Title from "../../ui/Title";
 import Form from "./Form";
+
 import style from "./Contact.module.css";
+
 const Contact = () => {
   return (
     <section className={style.contactBg} id="contact">
@@ -13,7 +15,7 @@ const Contact = () => {
             <ul className="lg:text-right">
               <li key="1">
                 <a
-                  className="text-white text-xs font-normal  md:text-base lg:text-lg"
+                  className="hover:underline underline-offset-4 decoration-1 text-white text-xs font-normal  md:text-base lg:text-lg"
                   href="tel:+38(098)1234567"
                 >
                   +38 (098) 12 34 567
@@ -21,33 +23,33 @@ const Contact = () => {
               </li>
               <li key="2">
                 <a
-                  className="text-white text-sm font-normal  md:text-base lg:text-lg"
+                  className="hover:underline underline-offset-4 decoration-1 text-white text-sm font-normal  md:text-base lg:text-lg"
                   href="tel:+38(073)1234567"
                 >
                   +38 (073) 12 34 567
                 </a>
               </li>
             </ul>
-            <p className="text-white text-xs font-extralight lg:text-left">
+            <p className="text-white text-xs font-extralight lg:text-left leading-6">
               Phone number
             </p>
             <a
-              className="text-white text-sm font-normal md:text-base lg:text-lg md:col-start-1 md:row-start-2 lg:text-right"
+              className="hover:underline underline-offset-4 decoration-1 text-white text-sm font-normal md:text-base lg:text-lg md:col-start-1 md:row-start-2 lg:text-right"
               href="mailto:support@carptravel.com"
             >
               support@carptravel.com
             </a>
-            <p className="text-white text-xs font-extralight md:text-left md:col-start-2 md:row-start-2 md:flex md:items-center">
+            <p className="text-white text-xs font-extralight md:text-left md:col-start-2 md:row-start-2 md:flex md:items-center leading-6">
               E-mail
             </p>
-            <p className="text-white text-xs font-extralight md:text-left md:col-start-4 lg:md:col-start-1 lg:pt-[60px] lg:text-right">
+            <p className="text-white text-xs font-extralight md:text-left md:col-start-4 lg:md:col-start-1 lg:pt-[60px] lg:text-right leading-6">
               Follow us
             </p>
             <div className="lg:pt-[60px] ">
               {["facebook", "instagram", "youtube", "tiktok"].map((el, i) => (
                 <p
                   key={i}
-                  className="text-white text-sm font-normal  md:text-base lg:text-lg"
+                  className="text-white text-sm font-normal hover:underline underline-offset-4 decoration-1 md:text-base lg:text-lg "
                 >
                   {el}
                 </p>
