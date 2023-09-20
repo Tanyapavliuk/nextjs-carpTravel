@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -9,6 +9,7 @@ const Header = () => {
   const handleClickLink = (e) => {
     setModalShow(false);
   };
+
   return (
     <>
       <div className="container mx-auto flex justify-between align-middle pb-9">
@@ -29,15 +30,18 @@ const Header = () => {
             </h2>
           </Link>
         </div>
-        <botton
+        <button
           type="botton"
           className="md:hidden uppercase text-sm font-normal tracking-wider leading-normal text-white z-20"
           onClick={() => setModalShow(!modalShow)}
         >
           {modalShow ? "close" : "menu"}
-        </botton>
+        </button>
         {modalShow && (
-          <div className=" w-screen h-screen backdrop-blur-xl bg-[#010A05BF] fixed top-0 left-0 z-10 flex justify-center items-center ">
+          <div
+            id="isOpenModal"
+            className="isModalShow w-screen h-screen backdrop-blur-xl bg-[#010A05BF] fixed top-0 left-0 z-10 flex justify-center items-center"
+          >
             <ul className="text-white flex flex-col gap-y-12 items-center text-lg tracking-[0.0875rem] font-normal">
               <li>
                 <Link onClick={handleClickLink} href="/#about">
@@ -69,22 +73,34 @@ const Header = () => {
         )}
         <ul className="text-white hidden md:flex gap-y-12 gap-x-6 items-center text-sm tracking-[ 0.1125rem] font-normal">
           <li>
-            <Link href="/#about" className="line cursor-pointer">
+            <Link
+              href="/#about"
+              className="hover:underline underline-offset-4 decoration-1 cursor-pointer"
+            >
               About
             </Link>
           </li>
           <li>
-            <Link href="/#services" className="line cursor-pointer">
+            <Link
+              href="/#services"
+              className="hover:underline underline-offset-4 decoration-1 cursor-pointer"
+            >
               Services
             </Link>
           </li>
           <li>
-            <Link href="/#career" className="line cursor-pointer">
+            <Link
+              href="/#career"
+              className="hover:underline underline-offset-4 decoration-1 cursor-pointer"
+            >
               Career
             </Link>
           </li>
           <li>
-            <Link href="/#gallery" className="line cursor-pointer">
+            <Link
+              href="/#gallery"
+              className="hover:underline underline-offset-4 decoration-1 cursor-pointer"
+            >
               Gallery
             </Link>
           </li>
