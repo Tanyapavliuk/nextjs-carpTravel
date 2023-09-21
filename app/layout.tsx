@@ -12,14 +12,6 @@ export const metadata: Metadata = {
     description: 'Unforgettable trips to the most beautiful parts of the Carpathians. Hoverla, Yaremche, Zakarpattia, Vorokhta, Synevyr Lake, Bukovel.',
     url: 'https://nextjs-carp-travel-nine.vercel.app/',
     type: 'website',
-    images: [
-      {
-        url: 'https://nextjs-carp-travel-nine.vercel.app/_next/static/media/slide1.d8ea3d0d.jpg',
-        width: 800,
-        height: 600,
-        alt: 'Unreal beauty of the Ukrainian Carpathians',
-      },
-    ]
   }
 }
 

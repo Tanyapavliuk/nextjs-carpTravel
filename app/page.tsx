@@ -8,6 +8,7 @@ import Contact from '../components/Contact/Contact.jsx'
 export default function Home() {
   return (
     <div className='relative'>
+
       <Hero />
       <main>
         <About />

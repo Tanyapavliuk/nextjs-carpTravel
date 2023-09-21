@@ -1,3 +1,5 @@
+
+#CarpTravel
 The page was created using **create-next-app** and for deployment used **Vercel Platform**.  
 The site contains information about the company **"Uncover Carpathian's Secrets"**. The following technologies were used:
 Next.js 13 (using app router) and Tailwind CSS is used for styling.  
@@ -7,3 +9,4 @@ Provided form validation using react-hook-form and Tailwind CSS to style validat
 The layout is adaptive and cross-browser for different sizes 320px, 768px, 1280px.  
 The mobile-first approach was used.  
 The layout is semantic and valid.  
+
