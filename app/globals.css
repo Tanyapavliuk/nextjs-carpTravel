@@ -28,6 +28,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
-body #isModalShow{
+.isModalShow{
   overflow: hidden;
 }
