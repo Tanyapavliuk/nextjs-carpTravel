@@ -5,10 +5,11 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 import MyModal from "../../app/@modal/Modal";
-import Label from "../../ui/Label";
+
 import FormError from "../../ui/FormError";
 import ModalText from "../../ui/ModalText";
 import style from "./Form.module.css";
+import Label from "../../ui/Label";
 
 const phoneRegExp = /^(?:\+38|38|8)?[0-9]{10}$/; // Регулярний вираз для українського номеру телефону
 

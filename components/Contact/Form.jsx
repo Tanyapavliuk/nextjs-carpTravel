@@ -5,9 +5,9 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 import MyModal from "../../app/@modal/Modal";
-import Label from "../../ui/Label";
 import FormError from "../../ui/FormError";
 import ModalText from "../../ui/ModalText";
+import Label from "@/ui/Label";
 
 const schema = yup
   .object({
