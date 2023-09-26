@@ -1,4 +1,5 @@
 import Title from "../../ui/Title";
+
 import style from "./About.module.css";
 
 const About = () => {
