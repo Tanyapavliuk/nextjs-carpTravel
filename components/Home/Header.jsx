@@ -6,6 +6,14 @@ import Image from "next/image";
 const Header = () => {
   const [modalShow, setModalShow] = useState(false);
 
+  useEffect(() => {
+    if (modalShow) {
+      document.body.classList.add("isModalShow");
+    } else {
+      document.body.classList.remove("isModalShow");
+    }
+  }, [modalShow]);
+
   const handleClickLink = (e) => {
     setModalShow(false);
   };

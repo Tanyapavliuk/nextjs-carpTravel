@@ -55,6 +55,7 @@ const Form = () => {
             pattern: /^[A-Za-z]+$/i,
           })}
           className="block text-[13px] text-white w-full h-6 bg-white/[0.05] pl-2 outline-none"
+          aria-describedby="name has to include two words for example John Smith"
         />
         {errors.firstName && <FormError>Incorrect name</FormError>}
       </Label>
@@ -68,6 +69,7 @@ const Form = () => {
           })}
           placeholder="johnsmith@email.com"
           className="block text-[13px] text-white w-full h-6 bg-white/[0.05] pl-2 outline-none"
+          aria-describedby="email have to include @ and dot something like johnsmith@email.com"
         />
         {errors.email && <FormError>Incorrect email</FormError>}
       </Label>
