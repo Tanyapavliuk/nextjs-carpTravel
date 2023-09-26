@@ -38,7 +38,7 @@ export async function GET() {
           }}
         >
           <h1 style={{ fontSize: "72px" }}>CarpTravel</h1>
-          <p>UNCOVER CARPATHIAN'S SECRETS</p>
+          <p>UNCOVER CARPATHIAN&apos;S SECRETS</p>
         </div>
       </div>
     ),
