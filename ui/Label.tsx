@@ -1,4 +1,9 @@
-const Label = ({ style, children }) => {
+type Props = {
+  style: string;
+  children: any;
+};
+
+const Label = ({ style, children }: Props): JSX.Element => {
   const styles = [
     "text-white",
     "relative",

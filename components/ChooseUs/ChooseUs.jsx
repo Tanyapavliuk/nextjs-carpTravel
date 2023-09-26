@@ -2,6 +2,8 @@ import Form from "./Form";
 import Title from "../../ui/Title";
 
 import style from "./ChooseUs.module.css";
+import ListTitle from "@/ui/ListTitle";
+import Text from "@/ui/TextListContact";
 
 const ChooseUs = () => {
   return (
@@ -22,39 +24,31 @@ const ChooseUs = () => {
           </h3>
           <ul className="flex flex-col gap-y-4 mr-[90px] text-right md:w-[14.0625rem] md:float-left md:mr-[28px] md:gap-y-6 lg:w-3/6 ">
             <li className="lg:grid lg:grid-cols-2 lg:gap-y-6 lg:gap-x-6">
-              <h4 className="text-white text-sm font-normal mb-2 md:text-base lg:text-lg">
-                Professional development
-              </h4>
-              <p className="text-white text-xs font-extralight lg:text-left">
+              <ListTitle>Professional development</ListTitle>
+              <Text>
                 We offer growth opportunities and a creative environment to
                 nurture your talents.
-              </p>
+              </Text>
             </li>
             <li className="lg:grid lg:grid-cols-2 lg:gap-y-6 lg:gap-x-6">
-              <h4 className="text-white text-sm font-normal mb-2 md:text-base lg:text-lg">
-                Teamwork
-              </h4>
-              <p className="text-white text-xs font-extralight lg:text-left">
+              <ListTitle>Teamwork</ListTitle>
+              <Text>
                 Join our close-knit family, where support and inspiration
                 abound.
-              </p>
+              </Text>
             </li>
             <li className=" lg:grid lg:grid-cols-2 lg:gap-y-6 lg:gap-x-6">
-              <h4 className="text-white text-sm font-normal mb-2 md:text-base lg:text-lg">
-                Stimulating work environment
-              </h4>
-              <p className="text-white text-xs font-extralight lg:text-left">
+              <ListTitle>Stimulating work environment</ListTitle>
+              <Text>
                 Flexibility and remote options for a comfortable experience.
-              </p>
+              </Text>
             </li>
             <li className="lg:grid lg:grid-cols-2 lg:gap-y-6 lg:gap-x-6">
-              <h4 className="text-white text-sm font-normal mb-2 md:text-base lg:text-lg">
-                Exciting challenges
-              </h4>
-              <p className="text-white text-xs font-extralight lg:text-left">
+              <ListTitle>Exciting challenges</ListTitle>
+              <Text>
                 Unleash your potential through unforgettable projects showcasing
                 Carpathian beauty.
-              </p>
+              </Text>
             </li>
           </ul>
         </div>
