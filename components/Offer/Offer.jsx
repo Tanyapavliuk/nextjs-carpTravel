@@ -6,29 +6,35 @@ import AccentText from "./AccentText";
 import style from "./Offer.module.css";
 import Title from "../../ui/Title";
 
+import currentPhoto from "../../db/photoServises.json";
+import arrey from "../../db/offerTitle.json";
+
 const Offer = () => {
   const [currentItem, setCurrentItem] = useState(0);
-  const arrey = [
-    "ATVs Traveling",
-    "Rock climbing",
-    "Hot air ballooning",
-    "Skydiving",
-    "Rafting",
-  ];
-  const currentPhoto = [
-    "/images/ATVs_Traveling.jpg",
-    "/images/Rock_climbing.jpg",
-    "/images/Hot_air_ballooning.jpg",
-    "/images/Skydiving.jpg",
-    "/images/Rafting.jpg",
-  ];
 
   const handleClickItem = (e) => {
     if (!e.target.id) return;
     setCurrentItem(e.target.id);
   };
+  const selectorBg = () => {
+    switch (currentItem) {
+      case "0":
+        return style.offer__bg;
+      case "1":
+        return style.offer__rockClimbing;
+      case "2":
+        return style.offer__hotAirBallooning;
+      case "3":
+        return style.offer__skydiving;
+      case "4":
+        return style.offer__rafting;
+      default:
+        return style.offer__bg;
+    }
+  };
+
   return (
-    <section className={style.offer__bg} id="services">
+    <section className={selectorBg()} id="services">
       <div className="container mx-auto py-[54px] lg:py-[104px]">
         <div className="md:flex md:gap-x-[170px] md:items-center lg:mb-[20px]">
           <Title>

@@ -33,9 +33,9 @@ const Header = () => {
                 height={21}
               />
             </span>
-            <h2 className="leading-normal tracking-tight text-white text-sm font-normal]">
+            <span className="leading-normal tracking-tight text-white text-sm font-normal hover:underline underline-offset-4 decoration-1 cursor-pointer">
               CarpTravel
-            </h2>
+            </span>
           </Link>
         </div>
         <button
@@ -113,7 +113,10 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link href="/#contact" className="line cursor-pointer">
+            <Link
+              href="/#contact"
+              className="hover:underline underline-offset-4 decoration-1 cursor-pointer"
+            >
               Contacts
             </Link>
           </li>

@@ -151,7 +151,7 @@ const Form = () => {
       </label>
       <button
         type="submit"
-        className="hover:underline underline-offset-4 decoration-1 uppercase text-3xl font-medium text-right md:col-start-2 md:row-start-5 text-white"
+        className=" ml-auto w-fit hover:underline underline-offset-4 decoration-1 uppercase text-3xl font-medium text-right md:col-start-2 md:row-start-5 text-white"
       >
         Send
       </button>

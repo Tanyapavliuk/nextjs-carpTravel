@@ -2,6 +2,7 @@ import Form from "./Form";
 import Title from "../../ui/Title";
 
 import style from "./Contact.module.css";
+import media from "../../db/social.json";
 
 const Contact = () => {
   return (
@@ -45,14 +46,16 @@ const Contact = () => {
             <p className="text-white text-xs font-extralight text-right md:text-left md:col-start-4 lg:md:col-start-1 lg:pt-[60px] lg:text-right leading-6">
               Follow us
             </p>
-            <div className="lg:pt-[60px] ">
-              {["facebook", "instagram", "youtube", "tiktok"].map((el, i) => (
-                <p
+            <div className="lg:pt-[60px] flex flex-col">
+              {media.map((el, i) => (
+                <a
+                  target="_blank"
+                  href={el.link}
                   key={i}
-                  className="text-white text-sm font-normal hover:underline underline-offset-4 decoration-1 md:text-base lg:text-lg "
+                  className="text-white text-sm font-normal hover:underline underline-offset-4 decoration-1 md:text-base lg:text-lg cursor-pointer"
                 >
-                  {el}
-                </p>
+                  {el.name}
+                </a>
               ))}
             </div>
           </div>
