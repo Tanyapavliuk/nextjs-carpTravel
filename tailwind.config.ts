@@ -2,11 +2,18 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/sections/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/ui/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+     screens: {
+        'sm': '320px', 
+        'md': '768px', 
+        'lg': '1280px', 
+        'xl': '1440px',
+      },
      container: {
       padding: {
         DEFAULT: '1.25rem',
@@ -20,12 +27,9 @@ const config: Config = {
       lineHeight: {
         'extra-big': '3.5em',
       },
-      screens: {
-        'sm': '320px', // Для маленьких екранів
-        'md': '768px', // Для середніх екранів
-        'lg': '1280px', // Для великих екранів
-        'xl': '1440px',
-      },
+       backgroundImage: {
+        'hero': "linear-gradient(to left, rgba(2, 15, 8, 0.50) 0%)",
+      }
     },
   },
   plugins: [],
