@@ -6,7 +6,7 @@ import image from "../../../public/images/aboutBg_mobile.webp";
 const About = () => {
   return (
     <div className="relative">
-      <SectionWrapper id="about" className={`px-[20px] py-[54px]`}>
+      <SectionWrapper id="about" className={`px-[20px] py-[34px] lg:py-[54px]`}>
         <Background image={image} />
         <div className=" container mx-auto lg:relative">
           <div className="md:relative lg:static">

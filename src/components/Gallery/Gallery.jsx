@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import slide1 from "../../../public/images/slide1.jpg";
-import slide2 from "../../../public/images/slide2.jpg";
-import slide3 from "../../../public/images/slide3.jpg";
+import slide1 from "../../../public/images/slide1.webp";
+import slide2 from "../../../public/images/slide2.webp";
+import slide3 from "../../../public/images/slide3.webp";
 
 const Gallery = () => {
   const [activeSlide, setActiveSlide] = useState(1);
@@ -46,7 +46,11 @@ const Gallery = () => {
       <ul className="md:hidden container mx-auto flex flex-col gap-y-5">
         {photoArrey.map((el, i) => (
           <li key={i}>
-            <Image src={el} alt="nature" />
+            <Image
+              src={el}
+              alt="nature"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
           </li>
         ))}
       </ul>
@@ -56,6 +60,7 @@ const Gallery = () => {
             <Image
               src={firstSlider()}
               alt="a photo of a place that can be visited with the CarpTravel company"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-neutral-800/70 to-neutral-800/70"></div>
           </li>
@@ -63,12 +68,14 @@ const Gallery = () => {
             <Image
               src={photoArrey[activeSlide]}
               alt="a photo of a place that can be visited with the CarpTravel company"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </li>
           <li key="2" className="relative w-2/12 lg:w-1/4">
             <Image
               src={lastSlider()}
               alt="a photo of a place that can be visited with the CarpTravel company"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-neutral-800/70 to-neutral-800/70"></div>
           </li>
