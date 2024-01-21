@@ -1,21 +1,20 @@
 import Gallery from "../Gallery/Gallery";
 import Title from "../../ui/Title";
-
-import style from "./Gallery.module.css";
+import Background from "../../ui/SectionBackground";
+import SectionWrapper from "../../ui/SectionWrapper";
+import image from "../../../public/images/GalleryBg.webp";
 
 const GallerySection = () => {
   return (
-    <section
-      id="gallery"
-      className={`${style.galleryBg} py-10 md:py-14 lg:py-[104px]`}
-    >
+    <SectionWrapper id="gallery" className={`px-[20px]`}>
+      <Background image={image} />
       <div className="container mx-auto md:flex md:justify-center lg:justify-start">
         <Title>
           Our <span className="font-medium">gallery</span>
         </Title>
       </div>
       <Gallery />
-    </section>
+    </SectionWrapper>
   );
 };
 

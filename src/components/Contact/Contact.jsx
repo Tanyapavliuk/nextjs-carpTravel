@@ -1,13 +1,16 @@
 import Form from "./Form";
 import Title from "../../ui/Title";
 
-import style from "./Contact.module.css";
+import image from "../../../public/images/contactBg.webp";
 import media from "../../db/social.json";
+import SectionWrapper from "../../ui/SectionWrapper";
+import Background from "../../ui/SectionBackground";
 
 const Contact = () => {
   return (
-    <section className={style.contactBg} id="contact">
-      <div className="container mx-auto py-[56px] md:py-16 lg:py-[104px]">
+    <SectionWrapper id="contact" className={`px-[20px]`}>
+      <Background image={image} />
+      <div className="container mx-auto">
         <Title>
           Contact <b>US</b>
         </Title>
@@ -62,7 +65,7 @@ const Contact = () => {
           <Form />
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 
