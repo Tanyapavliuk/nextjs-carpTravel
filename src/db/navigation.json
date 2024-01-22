@@ -1,0 +1,7 @@
+[
+    {"title":"About", "link":"/#about", "id":"1"},
+    {"title":"Services", "link":"/#services", "id":"2"},
+    {"title":"Career", "link":"/#career", "id":"3"},
+    {"title":"Gallery", "link":"/#gallery", "id":"4"},
+    {"title":"Contacts", "link":"/#contact", "id":"5"}
+]

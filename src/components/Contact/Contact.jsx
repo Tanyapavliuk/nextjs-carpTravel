@@ -5,6 +5,7 @@ import image from "../../../public/images/contactBg.webp";
 import media from "../../db/social.json";
 import SectionWrapper from "../../ui/SectionWrapper";
 import Background from "../../ui/SectionBackground";
+import Text from "../../ui/Text";
 
 const Contact = () => {
   return (
@@ -34,21 +35,19 @@ const Contact = () => {
                 </a>
               </li>
             </ul>
-            <p className="text-white text-xs font-extralight lg:text-left leading-6">
-              Phone number
-            </p>
+            <Text className=" lg:text-left leading-6">Phone number</Text>
             <a
               className="hover:underline underline-offset-4 decoration-1 text-white text-sm text-right md:text-left font-normal md:text-base lg:text-lg md:col-start-1 md:row-start-2 lg:text-right"
               href="mailto:support@carptravel.com"
             >
               support@carptravel.com
             </a>
-            <p className="text-white text-xs font-extralight md:text-left md:col-start-2 md:row-start-2 md:flex md:items-center leading-6">
+            <Text className="md:text-left md:col-start-2 md:row-start-2 md:flex md:items-center leading-6">
               E-mail
-            </p>
-            <p className="text-white text-xs font-extralight text-right md:text-left md:col-start-4 lg:md:col-start-1 lg:pt-[60px] lg:text-right leading-6">
+            </Text>
+            <Text className="text-right md:text-left md:col-start-4 lg:md:col-start-1 lg:pt-[60px] lg:text-right leading-6">
               Follow us
-            </p>
+            </Text>
             <div className="lg:pt-[60px] flex flex-col">
               {media.map((el, i) => (
                 <a
