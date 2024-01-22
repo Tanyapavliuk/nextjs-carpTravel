@@ -1,11 +1,10 @@
 import Image from "next/image";
 
 type Props = {
-  children: any;
   image: string;
 };
 
-const Background = ({ image, children }: Props): JSX.Element => {
+const Background = ({ image }: Props): JSX.Element => {
   return (
     <Image
       alt="Mountains"
